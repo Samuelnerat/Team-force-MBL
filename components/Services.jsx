@@ -12,10 +12,10 @@ const stats = [
   { name: 'Trusted Companies', value: '240+' },
   { name: 'Customer care', value: '78k' },
 ];
-// const controls = stats.map(() => useAnimation());
+const controls = stats.map(() => useAnimation());
 
 const Services = () => {
-  const controls = stats.map(() => useAnimation());
+  // const controls = stats.map(() => useAnimation());
 
   useEffect(() => {
     stats.forEach((stat, index) => {
