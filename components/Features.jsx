@@ -41,7 +41,7 @@ const Features = () => {
             <>
               <div
                 data-anim="card-bg-img"
-                className="absolute bottom-[10%] xl:bottom-[20%]  lg;left-[45%] w-[50px] lg:w-[100px] h-[50px] lg:h-[100px]"
+                className="absolute bottom-[10%] xl:bottom-[20%] left-[60%] lg:left-[45%] w-[100px] lg:w-[100px] h-[100px] lg:h-[100px]"
               >
                 <Image
                   fill
@@ -51,7 +51,7 @@ const Features = () => {
               </div>
               <div
                 data-anim="card-bg-img"
-                className="absolute hidden lg:block bottom-[50px] xl:bottom-[0%] right-[-2%] lg:right-[15%] w-[100px] lg:w-[200px] h-[100px] lg:h-[200px]"
+                className="absolute hidden lg:block bottom-[0px] xl:bottom-[0%] right-[-2%] lg:right-[15%] w-[100px] lg:w-[200px] h-[100px] lg:h-[200px]"
               >
                 <Image
                   fill
@@ -89,7 +89,7 @@ const Features = () => {
               </div>
               <div
                   data-anim="card-bg-img"
-                  className="absolute bottom-[-30%] md:bottom-[-10%] xl:bottom-[0%] right-[-40%] md:right-[-40%] xl:left-[30%] w-[250px] h-[250px]"
+                  className="absolute bottom-[-4%] md:bottom-[-10%] xl:bottom-[0%] left-[60%] md:right-[-40%] xl:left-[30%] w-[250px] h-[250px]"
                 >
                   <Image
                     fill
@@ -122,7 +122,7 @@ const Features = () => {
               <>
                 <div
                   data-anim="card-bg-img"
-                  className="absolute bottom-[20%] lg:bottom-[10%] right-[-15%] lg:right-[10%] xl:right-[38%] w-[100px] h-[108px] lg:w-[200px] lg:h-[208px]"
+                  className="absolute bottom-[20%] lg:bottom-[10%] right-[10%] lg:right-[10%] xl:right-[38%] w-[100px] h-[108px] lg:w-[200px] lg:h-[208px]"
                 >
                   <Image
                     fill

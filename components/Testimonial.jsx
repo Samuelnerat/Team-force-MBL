@@ -7,77 +7,78 @@ import { FaStar } from "react-icons/fa";
 const testimonial = [
   {
     ratings: 5,
-    content:
-      "Is it possible to Love your credit card processor? with TeamForce, yes!",
+    content: "Is it possible to Love your credit card processor? with TeamForce, yes!",
     name: "Lana Rey",
     position: "Founder & Leader",
     img: "/avatar.svg",
   },
   {
     ratings: 5,
-    content:
-      "Is it possible to Love your credit card processor? with TeamForce, yes!",
+    content: "Is it possible to Love your credit card processor? with TeamForce, yes!",
     name: "Micheal H",
     position: "Founder & Leader",
     img: "/Avatar.png",
   },
   {
     ratings: 5,
-    content:
-      "Is it possible to Love your credit card processor? with TeamForce, yes!",
+    content: "Is it possible to Love your credit card processor? with TeamForce, yes!",
     name: "J. McGhee",
     position: "Founder & Leader",
     img: "/avatar.svg",
   },
   {
     ratings: 5,
-    content:
-      "Is it possible to Love your credit card processor? with TeamForce, yes!",
+    content: "Is it possible to Love your credit card processor? with TeamForce, yes!",
     name: "Lana Rey",
     position: "Founder & Leader",
     img: "/Avatar.png",
   },
   {
     ratings: 5,
-    content:
-      "Is it possible to Love your credit card processor? with TeamForce, yes!",
+    content: "Is it possible to Love your credit card processor? with TeamForce, yes!",
     name: "Micheal H",
     position: "Founder & Leader",
     img: "/avatar.svg",
   },
   {
     ratings: 5,
-    content:
-      "Is it possible to Love your credit card processor? with TeamForce, yes!",
+    content: "Is it possible to Love your credit card processor? with TeamForce, yes!",
     name: "J. McGhee",
     position: "Founder & Leader",
     img: "/Avatar.png",
   },
 ];
 
-const Testimonial = ({ testimonials, scrollSnaps }) => {
+const Testimonial = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const controls = useAnimation();
+  const isLargeScreen = typeof window !== "undefined" && window.innerWidth >= 1024;
+  const testimonialsPerPage = isLargeScreen ? 3 : 1;
 
-  
   const moveToNext = () => {
-    setSelectedIndex((prevIndex) => (prevIndex + 1) % testimonial.length);
+    setSelectedIndex((prevIndex) => 
+      (prevIndex + testimonialsPerPage) % testimonial.length
+    );
   };
-
 
   useEffect(() => {
     const interval = setInterval(() => {
       moveToNext();
-      controls.start({ x: -selectedIndex * 100 + "%" });
     }, 5000); 
 
     return () => clearInterval(interval); 
-  }, [selectedIndex, controls]);
+  }, [selectedIndex, testimonialsPerPage]);
+
+  useEffect(() => {
+    controls.start({ x: -selectedIndex * (100 / testimonialsPerPage) + "%" });
+  }, [selectedIndex, controls, testimonialsPerPage]);
 
   const onDotButtonClick = (index) => {
-    setSelectedIndex(index);
-    controls.start({ x: index * 100 + "%" });
+    setSelectedIndex(index * testimonialsPerPage);
+    controls.start({ x: -index * 100 + "%" });
   };
+
+  const dotCount = Math.ceil(testimonial.length / testimonialsPerPage);
 
   return (
     <section className="mt-20 flex flex-col items-center w-full py-12 lg:py-24 relative bg-[#6d38c3]">
@@ -92,12 +93,11 @@ const Testimonial = ({ testimonials, scrollSnaps }) => {
           >
             {testimonial.map(({ name, content, ratings, position, img }, index) => (
               <div
-                className="relative pl-1 md:pl-4 lg:pl-6 flex-[1_0_100%] md:flex-[1_0_50%] lg:flex-[1_0_33.3%] min-h-[320px]"
+                className={`relative pl-1 md:pl-4 lg:pl-6 flex-[1_0_${0 / testimonialsPerPage}%] min-h-[320px]`}
                 key={index}
               >
                 <motion.article
-                  className="w-full min-h-full flex flex-col gap-3 px-10 py-14 bg-white bg-opacity-10 backdrop-blur-[20px] rounded-[20px] relative"
-                  key={index}
+                  className="lg:w-[360px] w-[264px] min-h-full flex flex-col gap-3  px-10 py-14 bg-white bg-opacity-10 backdrop-blur-[20px] rounded-[20px] relative"
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -128,12 +128,12 @@ const Testimonial = ({ testimonials, scrollSnaps }) => {
         </div>
 
         <div className="flex justify-center items-center gap-2 lg:gap-3 mt-4 lg:mt-12">
-          {testimonial.map((_, index) => (
+          {Array(dotCount).fill(null).map((_, index) => (
             <button
               key={index}
               onClick={() => onDotButtonClick(index)}
               className={`border border-white w-3 h-3 rounded-full ${
-                index !== selectedIndex ? "bg-transparent" : "bg-white"
+                index !== Math.floor(selectedIndex / testimonialsPerPage) ? "bg-transparent" : "bg-white"
               }`}
             ></button>
           ))}

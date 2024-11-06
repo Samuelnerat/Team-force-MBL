@@ -12,17 +12,16 @@ const stats = [
   { name: 'Trusted Companies', value: '240+' },
   { name: 'Customer care', value: '78k' },
 ];
+// const controls = stats.map(() => useAnimation());
 
 const Services = () => {
-  // Create individual animation controls for each stat
-  const controls = [
+   const controls = [
     useAnimation(),
     useAnimation(),
     useAnimation(),
   ];
 
   useEffect(() => {
-    // Start animation for each stat element
     stats.forEach((stat, index) => {
       controls[index].start({
         opacity: 1,
@@ -30,18 +29,20 @@ const Services = () => {
       });
     });
   }, [controls]);
+  
 
   return (
     <section className="w-full lg:pt-0 relative overflow-hidden bg-[#f2f0f6] px-20">
+
       {/* Content */}
-      <div className="mt-20 flex flex-col items-center lg:px-16 main-container pb-10 md:pb-12 lg:pb-24">
+      <div className="mt-20 flex flex-col items-center lg:px-16 main-container pb-10 md:pb-12 lg:pb-24 ">
         <div className="flex flex-col lg:flex-row justify-between lg:items-center gap-3 w-full mb-10 relative">
           <div className="mb-6 lg:mb-0">
             <h2 className="text-5xl text-black font-medium text-left lg:mb-4">
               We provide the <br className="hidden lg:block" /> best service for you
             </h2>
             <p className="text-xs text-gray-600 font-light text-left">
-              We&apos;ve got all your payments covered
+              We&aposve got all your payments covered
             </p>
           </div>
           <div id="stats" className="flex lg:items-center gap-2 lg:gap-10 relative">
@@ -63,51 +64,52 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-items-stretch gap-10 p-6 w-full">
-          <div className="h-full">
-            <ColoredCards
-              icon={
-                <div className="relative w-7 h-7 lg:w-10 lg:h-10 overflow-hidden">
-                  <IoGlobe className="w-10 h-10 text-gray-500" />
-                </div>
-              }
-              title="Online"
-              variant="one"
-            />
-          </div>
-          <div className="h-full">
-            <ColoredCards
-              icon={
-                <div className="relative w-8 h-7 lg:w-11 lg:h-10 overflow-hidden">
-                  <HiBuildingOffice2 className="w-10 h-10 text-gray-500" />
-                </div>
-              }
-              title="Bank Transfers"
-              variant="two"
-            />
-          </div>
-          <div className="h-full">
-            <ColoredCards
-              icon={
-                <div className="relative w-8 h-7 lg:w-11 lg:h-10 overflow-hidden">
-                  <FaKeyboard className="w-10 h-10 text-gray-500" />
-                </div>
-              }
-              title="Keyed"
-              variant="three"
-            />
-          </div>
-          <div className="h-full">
-            <ColoredCards
-              icon={
-                <div className="relative w-8 h-7 lg:w-11 lg:h-10 overflow-hidden">
-                  <GoPersonFill className="w-10 h-10 text-gray-500" />
-                </div>
-              }
-              title="In-Person"
-              variant="default"
-            />
-          </div>
-        </div>
+      <div className="h-full">
+        <ColoredCards
+          icon={
+            <div className="relative w-7 h-7 lg:w-10 lg:h-10 overflow-hidden">
+              <IoGlobe className='w-10 h-10 text-gray-500'/>
+            </div>
+          }
+          title="Online"
+          variant="one"
+        />
+      </div>
+      <div className="h-full">
+        <ColoredCards
+          icon={
+            <div className="relative w-8 h-7 lg:w-11 lg:h-10 overflow-hidden">
+              <HiBuildingOffice2 className='w-10 h-10 text-gray-500'/>
+            </div>
+          }
+          title="Bank Transfers"
+          variant="two"
+        />
+      </div>
+      <div className="h-full">
+        <ColoredCards
+          icon={
+            <div className="relative w-8 h-7 lg:w-11 lg:h-10 overflow-hidden">
+              <FaKeyboard className='w-10 h-10 text-gray-500' />
+            </div>
+          }
+          title="Keyed"
+          variant="three"
+        />
+      </div>
+      <div className="h-full">
+        <ColoredCards
+          icon={
+            <div className="relative w-8 h-7 lg:w-11 lg:h-10 overflow-hidden">
+              <GoPersonFill className='w-10 h-10 text-gray-500'/>
+            </div>
+          }
+          title="In-Person"
+          variant="default" 
+        />
+      </div>
+    </div>
+
       </div>
     </section>
   );

@@ -26,7 +26,7 @@ const Header = () => {
           {isMenuOpen ? (
             <FiX size={24} className="text-black" /> 
           ) : (
-            <FiMenu size={24} className="text-black" /> 
+            <FiMenu size={24} className="text-white" /> 
           )}
         </div>
 
@@ -59,7 +59,7 @@ const Header = () => {
             <Link href={"#"} onClick={toggleMenu} className="text-white">Blog</Link>
             <Link href={"#"} onClick={toggleMenu} className="text-white">Contact</Link>
             <Link href={"#"}>Login</Link>
-            <Link href={"#"}>Sign Up</Link>
+            <Button text='Sign Up' className="px-5 py-2 bg-gradient-to-b from-[#9cf725] to-[#47a93a]"/>
           </motion.nav>
         )}
 

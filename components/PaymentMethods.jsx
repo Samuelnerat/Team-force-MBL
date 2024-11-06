@@ -179,7 +179,6 @@ const PaymentMethods = () => {
 
   return (
     <section
-      ref={payemntMethodsRef}
       className="mt-20 flex flex-col items-center mx-auto  w-full lg:mb-0"
     >
       <div className="flex flex-col items-center gap-3 lg:mb-8">
@@ -192,7 +191,6 @@ const PaymentMethods = () => {
       </div>
 
       <figure
-        id="payment-methods-diagram"
         style={{
           width: `${containerWidth}px`,
           height: `${containerHeight}px`,

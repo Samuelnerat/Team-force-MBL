@@ -104,7 +104,7 @@ const Hero = () => {
   <div className="absolute top-0 left-0 w-full h-full">
     <Image fill alt="" src="/scroll-down.png" />
   </div>
-  <a href="#payment-features" className="relative w-2 h-4 lg:w-4 lg:h-6 rounded-3xl border-black border flex justify-center p-1">
+  <a href="#payment-features" className="relative w-2 h-6 lg:w-4 lg:h-6 rounded-3xl border-black border flex justify-center p-1">
     <motion.span
       data-anim="scroll-down"
       className="absolute  -translate-x-1/2 inline-block w-1 h-1 lg:w-[5px] lg:h-[5px] border border-black rounded-full"
