@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <header className=' px-40 bg-gradient-to-r from-violet-700 via-purple-600 to-purple-500 w-full text-white z-[1000] py-5'>
+    <header className='px-4 lg:px-40 bg-gradient-to-r from-violet-700 via-purple-600 to-purple-500 w-full text-white z-[1000] py-5'>
       <div className='flex justify-between items-center'>
         <Link href={'/'}>
           <Image src="/logo.png" alt="Logo" width={100} height={100} />

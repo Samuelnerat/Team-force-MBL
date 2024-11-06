@@ -20,7 +20,7 @@ const Features = () => {
           We&apos;ve got all your payments covered
         </p>
       </div>
-      <div  className="grid grid-cols-1 lg:grid-cols-2 gap-6  lg:p-6 mx-32">
+      <div  className="grid grid-cols-1 lg:grid-cols-2 gap-6  lg:p-6 mx-5 lg:mx-32">
       <motion.div
           initial="hidden"
           whileInView="visible"
@@ -41,7 +41,7 @@ const Features = () => {
             <>
               <div
                 data-anim="card-bg-img"
-                className="absolute bottom-[-20%] xl:bottom-[20%] left-[45%] w-[100px] h-[100px]"
+                className="absolute bottom-[10%] xl:bottom-[20%]  lg;left-[45%] w-[50px] lg:w-[100px] h-[50px] lg:h-[100px]"
               >
                 <Image
                   fill
@@ -51,7 +51,7 @@ const Features = () => {
               </div>
               <div
                 data-anim="card-bg-img"
-                className="absolute hidden lg:block bottom-[-70%] xl:bottom-[0%] right-[15%] w-[200px] h-[200px]"
+                className="absolute hidden lg:block bottom-[50px] xl:bottom-[0%] right-[-2%] lg:right-[15%] w-[100px] lg:w-[200px] h-[100px] lg:h-[200px]"
               >
                 <Image
                   fill
