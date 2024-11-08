@@ -16,85 +16,85 @@ const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <motion.div 
+      <motion.section
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
         <Hero />
-      </motion.div>
+      </motion.section>
 
-      <motion.div 
+      <motion.section
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
         <Features />
-      </motion.div>
+      </motion.section>
 
-      <motion.div 
+      <motion.section
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
         <PaymentMethods />
-      </motion.div>
+      </motion.section>
 
-      <motion.div 
+      <motion.section 
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
         <Services />
-      </motion.div>
+      </motion.section>
 
-      <motion.div 
+      <motion.section
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
         <Tools />
-      </motion.div>
+      </motion.section>
 
-      <motion.div 
+      <motion.section
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
         <StartProcess />
-      </motion.div>
+      </motion.section>
 
-      <motion.div 
+      <motion.section
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
         <Testimonial />
-      </motion.div>
+      </motion.section>
 
-      <motion.div 
+      <motion.section 
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
         <FAQ />
-      </motion.div>
+      </motion.section>
 
-      <motion.div 
+      <motion.section
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
         <Form />
-      </motion.div>
+      </motion.section>
 
-      <motion.div 
+      <motion.footer
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
       <Footer />
-      </motion.div>
+      </motion.footer>
     </main>
   );
 }

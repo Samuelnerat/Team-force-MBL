@@ -1,19 +1,7 @@
-// import React from 'react';
-
-// const PaymentMethods = () => {
-//   return (
-//     <div>
-      
-//     </div>
-//   );
-// }
-
-// export default PaymentMethods;
-
-
 "use client";
 import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
+import { useInView } from 'framer-motion';
 // import logoData from "./PaymentMethods.json";
 
 const logoData = [
@@ -148,7 +136,6 @@ const logoData = [
 ]
 
 
-
 const PaymentMethods = () => {
   const payemntMethodsRef = useRef(null);
 
@@ -178,9 +165,7 @@ const PaymentMethods = () => {
   const centerY = containerHeight / 2;
 
   return (
-    <section
-      className="mt-20 flex flex-col items-center mx-auto  w-full lg:mb-0"
-    >
+    <section className="mt-20 flex flex-col items-center mx-auto w-full lg:mb-0">
       <div className="flex flex-col items-center gap-3 lg:mb-8">
         <h2 className="text-center text-5xl text-black font-medium">
           All major <br className="hidden lg:block" /> payment methods
@@ -200,7 +185,6 @@ const PaymentMethods = () => {
           aspectRatio: "1290 / 480",
         }}
       >
-      
         <div
           style={{
             position: "absolute",
@@ -219,8 +203,8 @@ const PaymentMethods = () => {
               boxShadow: "0px 20px 60px rgba(0, 0, 0, 0.1)",
               zIndex: 1,
             }}
-            initial={{ opacity: 0, rotate: 10 }}
-            animate={{ opacity: 1, rotate: 0 }}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
           />
 
@@ -239,8 +223,8 @@ const PaymentMethods = () => {
                 top: `${logo.line.top}`,
                 rotate: `${logo.line.rotate}`,
               }}
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
               transition={{
                 duration: 1,
                 delay: index * 0.1,
@@ -283,11 +267,19 @@ const PaymentMethods = () => {
               top: `calc(${logo.position.top})`,
               left: `calc(${logo.position.left})`,
             }}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1,
+              delay: index * 0.2,
+              ease: "easeInOut",
+            }}
             whileHover={{
               scale: 1.2,
               rotate: 10,
               transition: { duration: 0.3 },
             }}
+            // whileInView={{ opacity: 1, y: 0, transition:{ duration: 0.6, delay: 0.4 } }}
           />
         ))}
       </figure>

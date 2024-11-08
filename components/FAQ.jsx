@@ -35,7 +35,7 @@ const faqs = [
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(0); 
   return (
-    <section className='mt-20 flex flex-col items-center mb-12 mx-auto w-full px-20'>
+    <div className='mt-20 flex flex-col items-center mb-12 mx-auto w-full px-20'>
       <div className='flex flex-col xl:flex-row justify-between gap-5 w-full'>
         <div className='w-full xl:w-[46%] relative'>
           <p className="text-base text-black border-b-2 font-medium border-[#B5EA88] mb-4 w-fit">Support</p>
@@ -90,7 +90,7 @@ const FAQ = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

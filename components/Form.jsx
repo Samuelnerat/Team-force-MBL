@@ -94,7 +94,7 @@ const Form = () => {
   };
 
   return (
-    <section className="lg:mx-24 mx-5">
+    <div className="lg:mx-80 md:mx-24 mx-5 ">
       <form
         ref={formRef}
         name="MBL-Form"
@@ -137,7 +137,7 @@ const Form = () => {
           <Button text="Get Started Now" className="w-fit px-5 text-white py-2 bg-gradient-to-b from-[#9cf725] to-[#47a93a]" />
         </div>
       </form>
-    </section>
+    </div>
   );
 };
 
