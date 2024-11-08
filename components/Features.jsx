@@ -158,7 +158,7 @@ const Features = () => {
                   initial="hidden"
                   whileInView="visible"
                   variants={imageVariants}
-                  className="absolute hidden lg:block lg:bottom-[-10%] xl:bottom-[-5%] lg:right-[-30%] xl:right-[7%] w-[311px] h-[364px]"
+                  className="absolute hidden lg:block lg:bottom-[-14%] lg:right-[-30%] xl:right-[7%] w-[311px] h-[364px]"
                 >
                   <Image
                     fill
