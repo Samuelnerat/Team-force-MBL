@@ -5,7 +5,7 @@ import Button from './Button';
 
 const StartProcess = () => {
   return (
-    <div className="flex flex-col xl:flex-row justify-between gap-8 lg:gap-4 mx-20 lg:mx-40 mt-20">
+    <div className="flex flex-col xl:flex-row justify-between gap-8  mx-20  mt-20">
       <div className="hidden lg:block w-[48%] relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ const StartProcess = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="absolute bottom-[-6px] right-[57%]"
+          className="absolute bottom-[-6px] right-[38%]"
         >
           <Image className="h-auto max-w-full" alt="" src="/people.png" width={200} height={57} />
         </motion.div>

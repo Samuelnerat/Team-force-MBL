@@ -33,7 +33,7 @@ const Hero = () => {
         {/* Left Section (Text) */}
         <div className="xl:w-[50%] max-w-[600px]  min-h-[400px] md:min-h-[600px] relative flex flex-col justify-center px-5">
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-medium mb-5 md:mb-10"
+            className="text-5xl md:text-7xl  font-medium mb-5 md:mb-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: fadeIn ? 1 : 0 }}
             transition={{ duration: 0.3 }} 
@@ -90,7 +90,7 @@ const Hero = () => {
               duration: 3,
             }}
           >
-            <Image width={270} height={180} alt="" src="/property-card.png" />
+            <Image width={200} height={180} alt="" src="/property-card.png" />
           </motion.div>
           <Image width={1000} height={1000} alt="" className="hidden md:block object-cover" src="/hand.png" />
 
@@ -106,7 +106,7 @@ const Hero = () => {
               duration: 3,
             }}
           >
-            <Image width={400} height={164} alt="" src="/credit-card.png" />
+            <Image width={350} height={164} alt="" src="/credit-card.png" />
           </motion.div>
 
           <motion.div
