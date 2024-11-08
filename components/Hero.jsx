@@ -22,7 +22,7 @@ const Hero = () => {
         setCurrentText(texts[textIndex]);
         setFadeIn(true);
       }, 500); 
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(cycleText);
   }, [textIndex]);

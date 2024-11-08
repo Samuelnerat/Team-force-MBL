@@ -45,7 +45,7 @@ const StartProcess = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="absolute bottom-[-6px] right-[38%]"
+          className="absolute bottom-[-6px] right-[42%]"
         >
           <Image className="h-auto max-w-full" alt="" src="/people.png" width={200} height={57} />
         </motion.div>

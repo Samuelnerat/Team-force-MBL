@@ -137,30 +137,18 @@ const logoData = [
 
 
 const PaymentMethods = () => {
-  const payemntMethodsRef = useRef(null);
-
-  // Define the window width state
   const [windowWidth, setWindowWidth] = useState(0);
-
   const containerWidth = 1290;
   const containerHeight = 480;
 
-  // Handle resize event
   useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", handleResize);
-      handleResize(); 
-      return () => window.removeEventListener("resize", handleResize);
-    }
-    handleResize(); // For server-side rendering case, it runs once
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    handleResize(); // For initial load
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const width = windowWidth >= containerWidth ? containerWidth : windowWidth;
-
   const centerX = containerWidth / 2;
   const centerY = containerHeight / 2;
 
@@ -188,7 +176,7 @@ const PaymentMethods = () => {
         <div
           style={{
             position: "absolute",
-            top: `${centerY - 75}px`, 
+            top: `${centerY - 75}px`,
             left: `${centerX - 75}px`,
           }}
         >
@@ -204,8 +192,12 @@ const PaymentMethods = () => {
               zIndex: 1,
             }}
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1, scale: 1.2 }}
+            transition={{
+              opacity: { duration: 0.8 },
+              scale: { duration: 1.2, ease: "easeOut" },
+            }}
+            viewport={{ once: false }} 
           />
 
           {/* Payment Method Lines */}
@@ -216,23 +208,25 @@ const PaymentMethods = () => {
                 height: "1px",
                 backgroundColor: "#aee87c",
                 position: "absolute",
-                width: `${Math.abs(
-                  Number(logo.position.left.replace("px", "")) - centerX
-                )}px`,
+                width: `${Math.abs(Number(logo.position.left.replace("px", "")) - centerX)}px`,
                 left: `${logo.line.left}`,
                 top: `${logo.line.top}`,
                 rotate: `${logo.line.rotate}`,
               }}
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
+              whileInView={{
+                opacity: 1,
+                scale: 1,
+                x: 0,
+                transition: { duration: 1, delay: index * 0.1 },
+              }}
+              initial={{ opacity: 0, scale: 0 }}
               transition={{
                 duration: 1,
-                delay: index * 0.1,
                 ease: "easeInOut",
               }}
+              viewport={{ once: false }} 
             >
               <motion.div
-                data-anim={`payment-methods-circle-${index}`}
                 style={{
                   display: "block",
                   position: "absolute",
@@ -268,25 +262,23 @@ const PaymentMethods = () => {
               left: `calc(${logo.position.left})`,
             }}
             initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{
+              opacity: 1,
+              scale: 1, 
+            }}
             transition={{
-              duration: 1,
+              duration: 1.2,
               delay: index * 0.2,
-              ease: "easeInOut",
+              ease: "easeOut",
             }}
-            whileHover={{
-              scale: 1.2,
-              rotate: 10,
-              transition: { duration: 0.3 },
-            }}
-            // whileInView={{ opacity: 1, y: 0, transition:{ duration: 0.6, delay: 0.4 } }}
+            viewport={{ once: false }}
           />
         ))}
       </figure>
 
       {/* SVG Wave at the Bottom */}
       <svg
-        className="w-full "
+        className="w-full"
         viewBox="0 0 1440 320"
         xmlns="http://www.w3.org/2000/svg"
       >
