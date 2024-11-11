@@ -13,7 +13,7 @@ const StartProcess = () => {
           transition={{ duration: 0.8 }}
           className="relative"
         >
-          <Image className="h-auto max-w-full" alt="" src="/account-bg.png" width={500} height={500} />
+          <Image className="h-auto max-w-full" src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731337362/account-bg_s39n7f.png" alt="/account-bg.png" width={500} height={500} />
         </motion.div>
 
         <motion.div
@@ -22,7 +22,7 @@ const StartProcess = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="absolute top-[-15px] left-[5%]"
         >
-          <Image className="h-auto max-w-full" alt="" src="/lady_smiling.png" width={500} height={530} />
+          <Image className="h-auto max-w-full" src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731337413/lady_smiling_rqxdz5.png" alt="/lady_smiling.png" width={500} height={530} />
         </motion.div>
 
         <motion.div
@@ -30,7 +30,7 @@ const StartProcess = () => {
           animate={{ y: [0, -15, 0] }} 
           transition={{ duration: 1, repeat: Infinity, repeatType: 'loop' }} 
         >
-          <Image className="h-auto max-w-full" alt="" src="/cube.png" width={75} height={100} />
+          <Image className="h-auto max-w-full" src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731337480/cube_qfaenh.png" alt="/cube.png" width={75} height={100} />
         </motion.div>
 
         <motion.div
@@ -38,7 +38,7 @@ const StartProcess = () => {
           animate={{ y: [0, -10, 0] }} 
           transition={{ duration: 1, repeat: Infinity, repeatType: 'loop' }} 
         >
-          <Image className="h-auto max-w-full" alt="" src="/cone.png" width={65} height={65} />
+          <Image className="h-auto max-w-full" src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731337549/cone_xdilzs.png" alt="/cone.png" width={65} height={65} />
         </motion.div>
 
         <motion.div
@@ -47,7 +47,7 @@ const StartProcess = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="absolute bottom-[-6px] right-[42%]"
         >
-          <Image className="h-auto max-w-full" alt="" src="/people.png" width={200} height={57} />
+          <Image className="h-auto max-w-full" src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731337596/people_nrttae.png" alt="/people.png" width={200} height={57} />
         </motion.div>
       </div>
 

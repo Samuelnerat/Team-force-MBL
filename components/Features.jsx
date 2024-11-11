@@ -60,8 +60,8 @@ const Features = () => {
                 >
                   <Image
                     fill
-                    alt=""
-                    src="/Qr-code.png"
+                    src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731335711/Qr-code_o3jinu.png"
+                    alt="/Qr-code.png"
                   />
                 </motion.div>
                 <motion.div
@@ -72,8 +72,8 @@ const Features = () => {
                 >
                   <Image
                     fill
-                    alt=""
-                    src="/pos.png"
+                    src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731335804/pos_ys9mr4.png"
+                    alt="/pos.png"
                   />
                 </motion.div>
               </>
@@ -102,8 +102,8 @@ const Features = () => {
                 >
                   <Image
                     fill
-                    alt=""
-                    src="/circle.png"
+                    src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731335899/circle_uxmmi8.png"
+                    alt="/circle.png"
                   />
                 </motion.div>
                 <motion.div
@@ -114,8 +114,8 @@ const Features = () => {
                 >
                   <Image
                     fill
-                    alt=""
-                    src="/message.png"
+                    src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731335981/message_d8u9r1.png"
+                    alt="/message.png"
                   />
                 </motion.div>
               </>
@@ -150,8 +150,8 @@ const Features = () => {
                 >
                   <Image
                     fill
-                    alt=""
-                    src="/recipet.png"
+                    src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731336060/recipet_gjlk9m.png"
+                    alt="/recipet.png"
                   />
                 </motion.div>
                 <motion.div
@@ -162,8 +162,8 @@ const Features = () => {
                 >
                   <Image
                     fill
-                    alt=""
-                    src="/shoe.png"
+                    src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731336125/shoe_jhitzh.png"
+                    alt="/shoe.png"
                   />
                 </motion.div>
               </>

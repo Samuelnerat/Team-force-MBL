@@ -42,7 +42,7 @@ const FAQ = () => {
           <h2 className="text-left mb-1 lg:mb-4 text-5xl text-black font-medium">Frequently <br /> Asked Questions</h2>
           <p className="text-sm lg:text-lg text-gray-500 font-normal mb-2 lg:mb-7">Seut ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
           <Button text="Get in Touch" className="px-5 py-2 bg-gradient-to-b from-[#9cf725] to-[#47a93a] w-fit mb-4 text-white" />
-          <Image alt='' src="/woman.png" className="h-auto max-w-full absolute bottom-[10%] right-[20%] hidden xl:block" width={150} height={200}/>
+          <Image alt='/woman.png' src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731335251/woman_nhxxhe.png" className="h-auto max-w-full absolute bottom-[10%] right-[20%] hidden xl:block" width={150} height={200}/>
         </div>
 
         <div>

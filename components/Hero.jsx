@@ -54,7 +54,7 @@ const Hero = () => {
                           animate={{ opacity: fadeIn ? 1 : 0 }}
                           transition={{ duration: 0.9 }} 
               >
-                {["/Avatar.png", "/avatar.svg", "/Avatar.png", "/avatar.svg"].map((img, index) => (
+                {["https://res.cloudinary.com/du1fj63cs/image/upload/v1731336530/Avatar_s2kltq.png", "https://res.cloudinary.com/du1fj63cs/image/upload/v1731336392/avatar_plppja.svg", "https://res.cloudinary.com/du1fj63cs/image/upload/v1731336530/Avatar_s2kltq.png", "https://res.cloudinary.com/du1fj63cs/image/upload/v1731336392/avatar_plppja.svg"].map((img, index) => (
                   <div key={index} className="w-6 h-6 md:w-9 md:h-9 border-2 border-main rounded-full -mr-2 relative">
                     <Image fill src={img} alt="" className="rounded-full object-cover" />
                   </div>
@@ -90,9 +90,9 @@ const Hero = () => {
               duration: 3,
             }}
           >
-            <Image width={200} height={180} alt="" src="/property-card.png" />
+            <Image width={200} height={180} src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731336651/property-card_a9scl5.png" alt="/property-card.png" />
           </motion.div>
-          <Image width={1000} height={1000} alt="" className="hidden md:block object-cover" src="/hand.png" />
+          <Image width={1000} height={1000} src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731337027/hand_ktn8qg.png" className="hidden md:block object-cover" alt="/hand.png" />
 
           <motion.div
             className="absolute top-[28%] left-[25%] backdrop-blur-[12px]"
@@ -106,7 +106,7 @@ const Hero = () => {
               duration: 3,
             }}
           >
-            <Image width={350} height={164} alt="" src="/credit-card.png" />
+            <Image width={350} height={164} src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731336715/credit-card_f22iki.png" alt="/credit-card.png" />
           </motion.div>
 
           <motion.div
@@ -121,14 +121,14 @@ const Hero = () => {
               duration: 3.5,
             }}
           >
-            <Image width={480} height={164} alt="" src="/spotify.png" />
+            <Image width={480} height={164} src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731336825/spotify_hwt2wh.png" alt="/spotify.png" />
           </motion.div>
         </motion.div>
       </div>
 
       <div className="absolute bottom-0 left-1/2 translate-y-3 lg:translate-y-2 -translate-x-1/2 w-[200px] h-[65px] lg:w-[260px] lg:h-[75px] flex flex-col gap-1 justify-center items-center">
         <div className="absolute top-0 left-0 w-full h-full">
-          <Image fill alt="" src="/scroll-down.png" />
+          <Image fill src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731336895/scroll-down_hk132w.png" alt="/scroll-down.png" />
         </div>
         <a href="#payment-features" className="relative w-2 h-6 lg:w-4 lg:h-6 rounded-3xl border-black border flex justify-center p-1">
           <motion.span

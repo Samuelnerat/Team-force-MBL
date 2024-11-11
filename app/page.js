@@ -88,13 +88,13 @@ export default function Home() {
         <Form />
       </motion.section>
 
-      <motion.footer
+      {/* <motion.footer
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ duration: 0.5 }}
       >
       <Footer />
-      </motion.footer>
+      </motion.footer> */}
     </main>
   );
 }

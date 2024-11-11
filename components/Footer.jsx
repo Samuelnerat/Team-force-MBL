@@ -31,7 +31,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className=' lg:pt-8 pb-6 lg:px-20 px-8 pt-10'>
+    <footer className=' lg:pt-8 pb-6 lg:px-20 px-8 pt-10'>
       <div className='mx-auto w-full px-4'>
         <div className='flex flex-wrap justify-between gap-10'>
           {/* Footer Content */}
@@ -146,7 +146,7 @@ const Footer = () => {
       >
         ↑
       </motion.div>
-    </div>
+    </footer>
   );
 };
 
