@@ -12,7 +12,7 @@ export const montserratAlternates = Montserrat_Alternates({
 });
 
 export const metadata = {
-  title: "TEAM FORCE – Next Generation Payment Solutions",
+  title: "TEAM FORCE – Next Generation Payment Solutions for Secure Transactions",
   description: "Discover Team Force, the next generation of secure, fast payment solutions for businesses and individuals.",
   openGraph: {
     type: "website",
@@ -65,6 +65,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={montserratAlternates.className}>
         {/* Main Heading and Page Content */}
+        <h1 className="hidden">Team Force – Next Generation Payment Solutions</h1>
         <Header />
         {children}
         <Footer />      

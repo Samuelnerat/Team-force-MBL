@@ -182,7 +182,7 @@ const PaymentMethods = () => {
         >
           <motion.img
             src="/center-Image.png"
-            alt=""
+            alt="logo image"
             style={{
               position: "relative",
               width: "150px",

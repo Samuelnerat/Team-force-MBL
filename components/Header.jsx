@@ -18,7 +18,7 @@ const Header = () => {
     <header className='px-4 lg:px-40 bg-gradient-to-r from-violet-700 via-purple-600 to-purple-500 w-full text-white z-[1000] py-5'>
       <div className='flex justify-between items-center'>
         <Link href={'/'}>
-          <Image alt="/logo.png" src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731336279/logo_f8vtwn.png" width={100} height={100} />
+          <Image alt="logo of the website team force" src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731336279/logo_f8vtwn.png" width={100} height={100} />
         </Link>
 
         {/* Hamburger Menu Icon for Small Screens */}

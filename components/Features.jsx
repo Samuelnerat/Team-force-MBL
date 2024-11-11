@@ -61,7 +61,7 @@ const Features = () => {
                   <Image
                     fill
                     src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731335711/Qr-code_o3jinu.png"
-                    alt="/Qr-code.png"
+                    alt="Qr code"
                   />
                 </motion.div>
                 <motion.div
@@ -73,7 +73,7 @@ const Features = () => {
                   <Image
                     fill
                     src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731335804/pos_ys9mr4.png"
-                    alt="/pos.png"
+                    alt="point of sale machine"
                   />
                 </motion.div>
               </>
@@ -103,7 +103,7 @@ const Features = () => {
                   <Image
                     fill
                     src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731335899/circle_uxmmi8.png"
-                    alt="/circle.png"
+                    alt="image of a circle"
                   />
                 </motion.div>
                 <motion.div
@@ -115,7 +115,7 @@ const Features = () => {
                   <Image
                     fill
                     src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731335981/message_d8u9r1.png"
-                    alt="/message.png"
+                    alt="image of an envelope"
                   />
                 </motion.div>
               </>
@@ -151,7 +151,7 @@ const Features = () => {
                   <Image
                     fill
                     src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731336060/recipet_gjlk9m.png"
-                    alt="/recipet.png"
+                    alt="image of a reciept"
                   />
                 </motion.div>
                 <motion.div
@@ -163,7 +163,7 @@ const Features = () => {
                   <Image
                     fill
                     src="https://res.cloudinary.com/du1fj63cs/image/upload/v1731336125/shoe_jhitzh.png"
-                    alt="/shoe.png"
+                    alt="image of a shopping cart"
                   />
                 </motion.div>
               </>

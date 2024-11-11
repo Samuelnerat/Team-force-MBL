@@ -37,7 +37,7 @@ const Footer = () => {
           {/* Footer Content */}
           <div className='flex flex-col gap-6'>
             <div className='w-[120px] h-[40px] relative'>
-              <Image alt="" src="/Second-Logo.png" width={100} height={100}/>
+              <Image alt="a logo for the website team force" src="/Second-Logo.png" width={100} height={100}/>
             </div>
             <p className="text-lg text-gray-500">Lorem Ipsum Lorem Ipsum</p>
             <div className="flex flex-col gap-2">
@@ -77,10 +77,10 @@ const Footer = () => {
           <div className="flex flex-col gap-8">
             <h4 className="text-2xl font-semibold">Download App</h4>
             <div className='flex gap-4'>
-              <Image className="max-w-full h-auto rounded-[10px]" alt='' src="/Qr-code.png" width={100} height={100}/>
+              <Image className="max-w-full h-auto rounded-[10px]" alt='Qr code' src="/Qr-code.png" width={100} height={100}/>
               <div className="flex flex-col gap-4">
-                <Image className='max-w-full h-auto rounded-[10px]' alt='' src="/App_store.png" width={120} height={40}/>
-                <Image className='max-w-full h-auto rounded-[10px]' alt='' src="/GooglePlay.png" width={150} height={40}/>
+                <Image className='max-w-full h-auto rounded-[10px]' alt='Apple store logo' src="/App_store.png" width={120} height={40}/>
+                <Image className='max-w-full h-auto rounded-[10px]' alt='google play image' src="/GooglePlay.png" width={150} height={40}/>
               </div>
             </div>
           </div>
