@@ -12,13 +12,13 @@ export const montserratAlternates = Montserrat_Alternates({
 });
 
 export const metadata = {
-  title: "TEAM FORCE – Next Generation Payment Solutions for Secure Transactions",
-  description: "Discover Team Force, the next generation of secure, fast payment solutions for businesses and individuals.",
+  title: "TEAM FORCE – Next Generation Payment Solutions",
+  description: "Discover Team Force, the next generation of secure, fast payment solutions and transactions for businesses and individuals.",
   openGraph: {
     type: "website",
     url: "https://team-force-mbl.vercel.app/",
     title: "TEAM FORCE – Next Generation Payment Solutions",
-    description: "Discover Team Force, the next generation of secure, fast payment solutions for businesses and individuals.",
+    description: "Discover Team Force, the next generation of secure, fast payment solutions and transactions for businesses and individuals.",
     siteName: "Teamforce",
     images: [
       {
@@ -35,12 +35,14 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         
         {/* Meta Tags for SEO */}
         <meta name="description" content={metadata.description} />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="keywords" content="payments, transaction, banking, next generation payments, secure payments" />
+        <meta name="keywords" content="payments, transaction, banking, next generation payments, secure payments, payment, online, account, teamforce, solution " />
+
+        {/* Canonical */}
         <link rel="canonical" href="https://team-force-mbl.vercel.app/" />
         
         {/* Open Graph Meta Tags */}
@@ -65,7 +67,6 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={montserratAlternates.className}>
         {/* Main Heading and Page Content */}
-        <h1 className="hidden">Team Force – Next Generation Payment Solutions</h1>
         <Header />
         {children}
         <Footer />      

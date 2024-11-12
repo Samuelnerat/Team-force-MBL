@@ -28,7 +28,7 @@ const Hero = () => {
   }, [textIndex]);
 
   return (
-    <div className="pl-0 lg:pl-40 text-white min-h-[70vh] md:min-h-screen 2xl:min-h-[878px] flex flex-col items-center justify-center xl:justify-start w-full pt-10 lg:pt-20 relative overflow-hidden bg-gradient-to-r from-violet-700 via-purple-600 to-purple-500 ">
+    <section className="pl-0 lg:pl-40 text-white min-h-[70vh] md:min-h-screen 2xl:min-h-[878px] flex flex-col items-center justify-center xl:justify-start w-full pt-10 lg:pt-20 relative overflow-hidden bg-gradient-to-r from-violet-700 via-purple-600 to-purple-500 ">
       <div className="flex flex-col xl:flex-row justify-between mx-auto">
         {/* Left Section (Text) */}
         <div className="xl:w-[50%] max-w-[600px]  min-h-[400px] md:min-h-[600px] relative flex flex-col justify-center px-5">
@@ -147,7 +147,7 @@ const Hero = () => {
         </a>
         <p className="relative text-xs lg:text-sm text-black">Scroll down</p>
       </div>
-    </div>
+    </section>
   );
 };
 

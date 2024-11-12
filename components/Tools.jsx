@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tools = () => {
   return (
-    <div className=" w-full">
+    <section className=" w-full">
         <div className=' flex flex-col items-center lg:px-16 main-container pb-10 md:pb-12 lg:pb-24'>
             <article  className="max-w-[1000px] w-full mx-auto bg-[#FBECEF] rounded-[30px] min-h-[200px] mt-10 md:mt-12 lg:mt-24 p-6 lg:p-12">
                 <h3 className="text-3xl font-medium text-black mb-6">More free tools than you can handle</h3>
@@ -23,7 +23,7 @@ const Tools = () => {
             </article>
         </div>
       
-    </div>
+    </section>
   );
 }
 

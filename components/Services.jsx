@@ -58,7 +58,7 @@ const Services = () => {
   };
 
   return (
-    <div className="w-full lg:pt-0 relative overflow-hidden bg-[#f2f0f6] px-20">
+    <section className="w-full lg:pt-0 relative overflow-hidden bg-[#f2f0f6] px-20">
 
       {/* Content */}
       <div className="mt-20 flex flex-col items-center lg:px-16 main-container pb-10 md:pb-12 lg:pb-24 ">
@@ -176,7 +176,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

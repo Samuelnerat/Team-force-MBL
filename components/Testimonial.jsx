@@ -69,7 +69,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="mt-20 bg-[#6d38c3] section w-full py-12 lg:py-24 relative">
+    <section className="mt-20 bg-[#6d38c3] section w-full py-12 lg:py-24 relative">
       <div className="main-container relative">
         <h2 className="text-center text-5xl font-medium text-white mb-10 lg:mb-16">
           What people <br /> are saying about us
@@ -106,7 +106,7 @@ const Testimonials = () => {
                       </p>
                       <div className="flex gap-2 items-center">
                         <div className="w-12 h-12 rounded-full overflow-hidden relative">
-                          <Image fill alt="" src={testimonial.img} />
+                          <Image fill alt="image of a testimonial" src={testimonial.img} />
                         </div>
                         <div className="flex flex-col">
                           <p className="text-lg text-white">{testimonial.name}</p>
@@ -135,7 +135,7 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

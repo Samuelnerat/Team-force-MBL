@@ -5,7 +5,7 @@ import Button from './Button';
 
 const StartProcess = () => {
   return (
-    <div className="flex flex-col xl:flex-row justify-between gap-8  mx-20  mt-20">
+    <section className="flex flex-col xl:flex-row justify-between gap-8  mx-20  mt-20">
       <div className="hidden lg:block w-[48%] relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,7 @@ const StartProcess = () => {
         <Button text="Open an account In Minutes" className="px-5 py-2 bg-gradient-to-b from-[#9cf725] to-[#47a93a] text-white text-center w-fit mb-4" />
         <p className="text-gray-500 text-xs md:text-sm font-medium">Try it for 30 days. For Free. No obligations</p>
       </div>
-    </div>
+    </section>
   );
 }
 
