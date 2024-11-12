@@ -32,11 +32,11 @@ const Header = () => {
 
         {/* Navigation Links for Large Screens */}
         <nav className='hidden lg:flex justify-center items-center gap-8'>
-          <Link href={"#"}>Home</Link>
-          <Link href={"#"}>Pages</Link>
-          <Link href={"#"}>Projects</Link>
-          <Link href={"#"}>Blog</Link>
-          <Link href={"#"}>Contact</Link>
+          <Link href={"/"}>Home</Link>
+          <Link href={"/"}>Pages</Link>
+          <Link href={"/"}>Projects</Link>
+          <Link href={"/"}>Blog</Link>
+          <Link href={"/"}>Contact</Link>
         </nav>
 
         {/* Animated Dropdown Menu for Mobile */}
@@ -53,12 +53,12 @@ const Header = () => {
               className="absolute top-6 right-6 text-white cursor-pointer"
               onClick={toggleMenu}
             />
-            <Link href={"#"} onClick={toggleMenu} className="text-white">Home</Link>
-            <Link href={"#"} onClick={toggleMenu} className="text-white">Pages</Link>
-            <Link href={"#"} onClick={toggleMenu} className="text-white">Projects</Link>
-            <Link href={"#"} onClick={toggleMenu} className="text-white">Blog</Link>
-            <Link href={"#"} onClick={toggleMenu} className="text-white">Contact</Link>
-            <Link href={"#"}>Login</Link>
+            <Link href={"/"} onClick={toggleMenu} className="text-white">Home</Link>
+            <Link href={"/"} onClick={toggleMenu} className="text-white">Pages</Link>
+            <Link href={"/"} onClick={toggleMenu} className="text-white">Projects</Link>
+            <Link href={"/"} onClick={toggleMenu} className="text-white">Blog</Link>
+            <Link href={"/"} onClick={toggleMenu} className="text-white">Contact</Link>
+            <Link href={"/"}>Login</Link>
             <Button text='Sign Up' className="px-5 py-2 bg-gradient-to-b from-[#9cf725] to-[#47a93a]"/>
           </motion.nav>
         )}

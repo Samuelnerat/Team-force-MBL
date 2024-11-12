@@ -32,6 +32,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+           {/* Canonical */}
+           <link rel="canonical" href="https://team-force-mbl.vercel.app/" />
+           
         <title>{metadata.title}</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,8 +45,7 @@ export default function RootLayout({ children }) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="keywords" content="payments, transaction, banking, next generation payments, secure payments, payment, online, account, teamforce, solution " />
 
-        {/* Canonical */}
-        <link rel="canonical" href="https://team-force-mbl.vercel.app/" />
+     
         
         {/* Open Graph Meta Tags */}
         <meta property="og:type" content={metadata.openGraph.type} />
